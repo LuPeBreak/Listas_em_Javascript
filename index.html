@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Listas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="scripts.js"></script>
+        <script>
+            //teste de funçoes
+            
+            /*
+             * Teste Lista Duplamente Encadeada
+             */
+            alert("Lista Dupla");
+            var listaDupla = new ListeaDuplamenteEnc(5);
+            alert(listaDupla.add(6));
+            alert(listaDupla.add(4));
+            alert(listaDupla.add(7));
+            alert(listaDupla.busca(5).chave);
+            alert(listaDupla.busca(6).chave);
+            //remove um elemento do final
+            alert(listaDupla.remove(7));
+            //remove um elemento do meio
+            alert(listaDupla.remove(6));
+            //remove um elemento do inicio
+            alert(listaDupla.remove(5));
+            //busca um elemento que ja foi removido
+            alert(listaDupla.busca(5));
+            //tenta remover um elemento inexistente ( ja foi removido)
+            alert(listaDupla.remove(5));
+            //remove o unico elemento da lista (primeiro e ultimo)
+            alert(listaDupla.remove(4));
+            //Adicionando a Resposta para tudo numa lista vazia
+            alert(listaDupla.add(42));
+            
+            /*
+             * Teste Lista Encadeada
+             */
+            alert("Lista Encadeada");
+            var listaEnc = new ListeaEnc(5);
+            alert(listaEnc.add(6));
+            alert(listaEnc.add(4));
+            alert(listaEnc.add(7));
+            alert(listaEnc.busca(5).element.chave);
+            alert(listaEnc.busca(6).element.chave);
+            //remove um elemento do final
+            alert(listaEnc.remove(7));
+            //remove um elemento do meio
+            alert(listaEnc.remove(6));
+            //remove um elemento do inicio
+            alert(listaEnc.remove(5));
+            //busca um elemento que ja foi removido
+            alert(listaEnc.busca(5).element);
+            //tenta remover um elemento inexistente ( ja foi removido)
+            alert(listaEnc.remove(5));
+            //remove o unico elemento da lista (primeiro e ultimo)
+            alert(listaEnc.remove(4));
+            //Adicionando a Resposta para tudo numa lista vazia
+            alert(listaEnc.add(42));
+            
+            /*
+             * Teste Lista Circular
+             */
+            alert("Lista cirular");
+            var listaCircular = new ListaCircular(5);
+            alert(listaCircular.add(6));
+            alert(listaCircular.add(4));
+            alert(listaCircular.add(7));
+            alert(listaCircular.busca(5).element.chave);
+            alert(listaCircular.busca(6).element.chave);
+            //remove um elemento do final
+            alert(listaCircular.remove(7));
+            //remove um elemento do meio
+            alert(listaCircular.remove(6));
+            //remove um elemento do inicio
+            alert(listaCircular.remove(5));
+            //busca um elemento que ja foi removido
+            alert(listaCircular.busca(5).find);
+            //tenta remover um elemento inexistente ( ja foi removido)
+            alert(listaCircular.remove(5));
+            //remove o unico elemento da lista (primeiro e ultimo)
+            alert(listaCircular.remove(4));
+            //Adicionando a Resposta para tudo numa lista vazia
+            alert(listaCircular.add(42));
+        </script>
+
+    </body>
+</html>
